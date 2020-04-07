@@ -19,18 +19,19 @@ This repository includes a total of 4 files.
 </table>
 
 <h1 id=script>run_analysis.R in details</h1>
-<h2>Summary of the content in the zip.file</h2>
+<h2>Summary of the data content in the zip.file</h2>
 <table>
   <tr><th>File Name</th><th>Description</th></tr>
-  <tr><td valign=top>subject</td><td>The Id on the individual that participated in the study</td></tr>
-  <tr><td valign=top>y</td><td>The descriptive name for each of the 6 activities included inthe study</td></tr>
-  <tr><td valign=top>X</td><td>The different variables and the numeric values that were generated for each of these</td></tr>
+  <tr><td valign=top>subject_(test or train)</td><td>The Id on the individual that participated in the study</td></tr>
+  <tr><td valign=top>y_(test or train)</td><td>The descriptive name for each of the 6 activities included inthe study</td></tr>
+  <tr><td valign=top>X_(test or train)</td><td>The different variables and the numeric values that were generated for each of these</td></tr>
+<table>
 <h2>Loading in the data</h2>
 The main goal of the run_analysis.R script is to manipulate the data that is given on the assignment page and create a tidy data set. The first logical thing to do is therefore to load in the data in R. This was done be using the <code>read.table("filedestination")</code> function to read the txt.files into data frames for all the data in the zip.file and this include: test set (X_test, y_test and subject_test) and training set (X_train, y_train and subject_train), so that is 6 data frames in total.
 <h2>Merging the data</h2>
 Next, the data sets (test and training sets) was merged into one data set. First, the <code>dim()</code> function was used on the 3 data frames from each data set to get information about the dimensions and how the data sets should be build. For each data set, the <code>cbind()</code> function was used to combine the data frames via columns based on the information about the dimensions. Next, the two data sets (test and training), combined by columns were put together into 1 data set using the <code>rbind()</code> function. All in all, a data frame with <b>10299</b> observations and <b>563</b> variables was created.
 <h2>Extracting measurements</h2>
-For this part, only the measurements on the mean and std for each measurement was extracted. In other words, only the variables and its numeric values that were generated using <code>mean()</code> and <code>std()</code> were extracted.  
+For this part, only the measurements on the mean and std for each measurement was extracted. In other words, only the variables and its numeric values that were generated using <code>mean()</code> and <code>std()</code> were extracted. These variables can be found in the features.txt file. To extract these variables, subsetting using R's basic function were used: <code>df[, columns]</code>. A total of 68 varibles were extracted (the subject_column, the y_column and 66 columns with values generated using <code>mean()</code> and <code>std()</code>.       
 
 
 
