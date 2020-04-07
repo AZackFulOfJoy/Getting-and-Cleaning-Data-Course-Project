@@ -48,14 +48,72 @@ I followed some of the lecture's principle of naming variables (No underscores,,
   <tr><td valign=top>19</td><td>timeBodyAccJerkStdY</td><td>... in the Y-axis.</td></tr>
   <tr><td valign=top>20</td><td>timeBodyAccJerkStdZ</td><td>... in the Z-axis.</td></tr>
   
-  <tr><td valign=top>15</td><td>timeBodyAccJerkMeanX</td><td>The mean value of the time domain signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
-  <tr><td valign=top>16</td><td>timeGravityAccMeanY</td><td>... in the Y-axis.</td></tr>
-  <tr><td valign=top>17</td><td>timeGravityAccMeanZ</td><td>... in the Z-axis.</td></tr>
-  <tr><td valign=top>18</td><td>timeGravityAccStdX</td><td>The mean value of the standard deviation of the time domain signal based on the body component that has been obtained by the phone's accelerometer in the X-axis.</td></tr>
-  <tr><td valign=top>19</td><td>timeGravityAccStdY</td><td>... in the Y-axis.</td></tr>
-  <tr><td valign=top>20</td><td>timeGravityAccStdZ</td><td>... in the Z-axis.</td></tr>
+  <tr><td valign=top>21</td><td>timeBodyGyroMeanX</td><td>The mean value of the time domain signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
+  <tr><td valign=top>22</td><td>timeBodyGyroMeanY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>23</td><td>timeBodyGyroMeanZ</td><td>... in the Z-axis.</td></tr>
   
+  <tr><td valign=top>24</td><td>timeBodyGyroStdX</td><td>The mean value of the standard deviation of the time domain signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
+  <tr><td valign=top>25</td><td>timeBodyGyroStdY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>26</td><td>timeBodyGyroStdZ</td><td>... in the Z-axis.</td></tr>
   
+   <tr><td valign=top>27</td><td>timeBodyGyroJerkMeanX</td><td>The mean value of the time domain jerk signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
+  <tr><td valign=top>28</td><td>timeBodyGyroJerkMeanY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>29</td><td>timeBodyGyroJerkMeanZ</td><td>... in the Z-axis.</td></tr>
+  
+  <tr><td valign=top>30</td><td>timeBodyGyroJerkStdX</td><td>The mean value of the standard deviation of the time domain jerk signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
+  <tr><td valign=top>31</td><td>timeBodyGyroJerkStdY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>32</td><td>timeBodyGyroJerkStdZ</td><td>... in the Z-axis.</td></tr>
+  
+  <tr><td valign=top>33</td><td>timeBodyAccMagMean</td><td>The magnitude mean value of the time domain signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  <tr><td valign=top>34</td><td>timeBodyAccMagStd</td><td>The magnitude mean value of the standard deviation of the time domain signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  
+  <tr><td valign=top>35</td><td>timeGravityAccMagMean</td><td>The magnitude mean value of the time domain signal based on the gravity component that has been obtained by the phone's accelerometer.</td></tr>
+  <tr><td valign=top>36</td><td>timeGravityAccMagStd</td><td>The magnitude mean value of the standard deviation of the time domain signal based on the gravity component that has been obtained by the phone's accelerometer.</td></tr>
+  
+  <tr><td valign=top>37</td><td>timeBodyAccJerkMagMean</td><td>The magnitude mean value of the time domain jerk signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  <tr><td valign=top>38</td><td>timeBodyAccJerkMagStd</td><td>The magnitude mean value of the standard deviation of the time domain jerk signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  
+  <tr><td valign=top>39</td><td>timeBodyGyroMagMean</td><td>The magnitude mean value of the time domain signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  <tr><td valign=top>40</td><td>timeBodyGyroMagStd</td><td>The magnitude mean value of the standard deviation of the time domain signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  
+  <tr><td valign=top>41</td><td>timeBodyGyroJerkMagMean</td><td>The magnitude mean value of the time domain jerk signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  <tr><td valign=top>42</td><td>timeBodyGyroJerkMagStd</td><td>The magnitude mean value of the standard deviation of the time domain jerk signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  
+  <tr><td valign=top>43</td><td>freqBodyAccMeanX</td><td>The mean value of the frequency domain signal based on the body component that has been obtained by the phone's accelerometer in the X-axis.</td></tr>
+  <tr><td valign=top>44</td><td>freqBodyAccMeanY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>45</td><td>freqBodyAccMeanZ</td><td>... in the Z-axis.</td></tr>
+  
+  <tr><td valign=top>46</td><td>freqBodyAccStdX</td><td>The mean value of the standard deviation of the frequency domain signal based on the body component that has been obtained by the phone's accelerometer in the X-axis.</td></tr>
+  <tr><td valign=top>47</td><td>freqBodyAccStdY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>48</td><td>freqBodyAccStdZ</td><td>... in the Z-axis.</td></tr>  
+  
+   <tr><td valign=top>49</td><td>freqBodyAccJerkMeanX</td><td>The mean value of the frequency domain jerk signal based on the body component that has been obtained by the phone's accelerometer in the X-axis.</td></tr>
+  <tr><td valign=top>50</td><td>freqBodyAccJerkMeanY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>51</td><td>freqBodyAccJerkMeanZ</td><td>... in the Z-axis.</td></tr>
+  
+  <tr><td valign=top>52</td><td>freqBodyAccJerkStdX</td><td>The mean value of the standard deviation of the frequency domain jerk signal based on the body component that has been obtained by the phone's accelerometer in the X-axis.</td></tr>
+  <tr><td valign=top>53</td><td>freqBodyAccJerkStdY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>54</td><td>freqBodyAccJerkStdZ</td><td>... in the Z-axis.</td></tr>  
+  
+  <tr><td valign=top>55</td><td>freqBodyGyroMeanX</td><td>The mean value of the frequency domain signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
+  <tr><td valign=top>56</td><td>freqBodyGyroMeanY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>57</td><td>freqBodyGyroMeanZ</td><td>... in the Z-axis.</td></tr>
+  
+  <tr><td valign=top>58</td><td>freqBodyGyroStdX</td><td>The mean value of the standard deviation of the frequency domain signal based on the body component that has been obtained by the phone's gyroscope in the X-axis.</td></tr>
+  <tr><td valign=top>59</td><td>freqBodyGyroStdY</td><td>... in the Y-axis.</td></tr>
+  <tr><td valign=top>60</td><td>freqBodyGyroStdZ</td><td>... in the Z-axis.</td></tr>  
+  
+  <tr><td valign=top>61</td><td>freqBodyAccMagMean</td><td>The magnitude mean value of the frequency domain signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  <tr><td valign=top>62</td><td>freqBodyAccMagStd</td><td>The magnitude mean value of the standard deviation of the frequency domain signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  
+  <tr><td valign=top>63</td><td>freqBodyAccJerkMagMean</td><td>The magnitude mean value of the frequency domain jerk signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  <tr><td valign=top>64</td><td>freqBodyAccJerkMagStd</td><td>The magnitude mean value of the standard deviation of the frequency domain jerk signal based on the body component that has been obtained by the phone's accelerometer.</td></tr>
+  
+  <tr><td valign=top>65</td><td>freqBodyGyroMagMean</td><td>The magnitude mean value of the frequency domain signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  <tr><td valign=top>66</td><td>freqBodyGyroMagStd</td><td>The magnitude mean value of the standard deviation of the frequency domain signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  
+  <tr><td valign=top>67</td><td>freqBodyGyroJerkMagMean</td><td>The magnitude mean value of the frequency domain jerk signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
+  <tr><td valign=top>68</td><td>freqBodyGyroJerkMagStd</td><td>The magnitude mean value of the standard deviation of the frequency domain jerk signal based on the body component that has been obtained by the phone's gyroscope.</td></tr>
 </table>
 
 
