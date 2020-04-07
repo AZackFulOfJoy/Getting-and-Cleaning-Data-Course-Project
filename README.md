@@ -31,8 +31,23 @@ The main goal of the run_analysis.R script is to manipulate the data that is giv
 <h2>Merging the data</h2>
 Next, the data sets (test and training sets) was merged into one data set. First, the <code>dim()</code> function was used on the 3 data frames from each data set to get information about the dimensions and how the data sets should be build. For each data set, the <code>cbind()</code> function was used to combine the data frames via columns based on the information about the dimensions. Next, the two data sets (test and training), combined by columns were put together into 1 data set using the <code>rbind()</code> function. All in all, a data frame with <b>10299</b> observations and <b>563</b> variables was created.
 <h2>Extracting measurements</h2>
-For this part, only the measurements on the mean and std for each measurement was extracted. In other words, only the variables and its numeric values that were generated using <code>mean()</code> and <code>std()</code> were extracted. These variables can be found in the features.txt file. To extract these variables, subsetting using R's basic function were used: <code>df[, columns]</code>. A total of 68 varibles were extracted (the subject_column, the y_column and 66 columns with values generated using <code>mean()</code> and <code>std()</code>.       
-
+For this part, only the measurements on the mean and std for each measurement was extracted. In other words, only the variables and its numeric values that were generated using <code>mean()</code> and <code>std()</code> were extracted. These variables can be found in the features.txt file. To extract these variables, subsetting using R's basic function were used: <code>df[, columns]</code>. A total of 68 varibles were extracted (the subject_column, the y_column and 66 columns with values generated using <code>mean()</code> and <code>std()</code>).       
+<h2>Adding descriptive activity names</h2>
+The numbers in the column originating from y_test were switched to the descriptive names found in the activity_labels.txt file. This was done by subsetting the column in the data frame and assign new values for each activity: <code>df$colname[df$colname == x] <- as.character(activity)</code>. Here, x is a number from 1-6 and activity the descriptive name that corresponds to the number.
+<h2>Labelling the columns with descriptive variable names</h2>
+To do this, all the column names can be assessed by doing <code>colnames(df)</code> and previous names can be overwritten by assigning a character vector of the new names: <code>colnames(df) <- c("colname1", "colname2"...</code>. After doing this, we now have a data frame with <b>10299</b> observations and <b>563</b> variables in which all variables are correctly named.
+<h2>Making a tidy data set using dplyr package</h2>
+The dplyr packages is installed and loaded in using the <code>install.packages()</code> function and <code>library()</code> function.
+We make a tibble data frame using the previous data frame by doing: <code>tbl_df()</code>. The reason for doing this is because one of the function that will be used later on only takes a tibble data frame as input argument.
+Next, we want to order this new tibble data frame based on the subjects (first column) and the activities (second column) and we can do that by doing: <code>arrange(tbl_df, colname1, colname2)</code>.
+Next, we want to get the average of each variable for each activity and each subject and we can do that by grouping the subject and activity columns together and obtain the average values on all the other variables based on the groups. To group the first 2 columns, we can do: <code>group_by(tbl_df, coltabuæarname1, colname2)</code> and to get the averages based on this grouping, we can do: <code>summarize_each(tbl_df, funs(mean))</code>. The last function can only take a tibble data frame as input argument.
+<h2>Saving the tidy data set</h2>
+Last step is to save the tidy data set. This can be done by: <code>write.table(tbl_df, file="filename", row.names=FALSE</code>. 
+  
+  
+  
+  
+  
 
 
 
